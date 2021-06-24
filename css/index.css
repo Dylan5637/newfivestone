@@ -1,0 +1,375 @@
+@charset "utf-8";
+
+/* slideOuter */
+#main .slideOuter {
+    height: 770px;
+    overflow: hidden;
+}
+#main .slideOuter .slide {
+    height: 770px; 
+    position: relative;
+}
+
+.slideInner .slide .slide_text {
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.slideInner .slide .slide_text h2 {
+    font-size: 50px;
+    font-weight: 500;
+    padding: 0 0 30px 0;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
+}
+.slideInner .slide .slide_text p {
+    font-size: 16px;
+    color: #eee;
+}
+.slideInner .slide .slide_text p span {
+    display: block;
+}
+
+.slideInner .slide .slide_text a {
+    display: inline-block;
+    padding: 2px 25px;
+    border: 1px solid #fff;
+    margin: -260px;
+}
+.slideInner .slide .slide_text a:hover {
+    background: rgba(255,255,255,0.5);
+}
+
+
+/* service */
+#section .service { padding: 60px 0; }
+
+#section .service h2 {
+    color: #333;
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+}
+#section .service p.desc {
+    color: #777;
+    font-size: 17px;
+    text-align: center;
+    font-weight: normal;
+    padding: 5px 0px 40px 0;
+}
+
+#section .service ul { overflow: hidden;}
+
+#section .service li {
+    float: left;
+    width: 25%;
+    height: 386.7px;
+    min-height: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+#section .service .imgbox {
+    overflow: hidden;
+    background: #000;
+}
+#section .service .imgbox img {
+    transition: all 0.5s;
+}
+#section .service .imgbox:hover img {
+    transform: scale(1.2);
+    opacity: 0.7;
+}
+
+#section .service ul h3 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #333;
+    margin: 5px 0 0 0;
+    padding: 15px 0 0 0;
+}
+
+#section .service li p {
+    font-size: 13px;
+    font-weight: normal;
+    color: #777;
+    margin: 5px 0 30px 0;
+}
+
+#section .service .title span {
+    display: inline-block;
+    font-size: 12px;
+    padding: 6px 25px 6px 25px;
+    border-radius: 20px;
+    border: 1px solid #bbb;
+    color: #555;
+    background: #fff;
+    transition: all 0.5s;
+}
+
+#section .service li:hover .title span {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+
+/* product */
+#section .product { 
+    width: 100%;
+    height: 813.66px;
+    background-color: #ebeae9;
+    padding: 70px 0 80px 0;
+}
+
+#section .product h2 {
+    font-size: 34px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+#section .product p.desc {
+    text-align: center;
+    font-size: 17px;
+    font-weight: normal;
+    color: #777;
+    padding: 5px 0 40px 0;   
+}
+
+#section .product li {
+    float: left;
+    width: 32%;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+#section .product li:nth-child(3n+2) {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+/* 이미지 크기랑 li크기를 똑같이 맞추려면 padding 대신에 margin 여백을 바깥쪽에 준다.*/
+
+#section .product li::before {
+    content: '';
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    transition: all 0.5s;
+}
+#section .product li:hover::before {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#section .product li .zoom {
+    position: absolute;
+    top: 50%; left: 35%;
+    margin-top: -30px;
+    text-align: center;
+}
+
+#section .product li h3 {
+    font-size: 28px;
+    font-weight: normal;
+    color: #fff;
+    margin: 0 0 10px 0;
+    letter-spacing: .5px;
+}
+#section .product li:hover h3 {
+    opacity: 1;
+    transform: translateY(-20px);
+    transition: all 0.2s;
+}
+
+#section .product li .zoom {
+    opacity: 0;
+}
+#section .product li:hover .zoom {
+    opacity: 1;
+}
+
+#section .product li .zoom span {
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px 30px 6px 30px;
+    transition: all 0.2s;
+}
+#section .product li:hover .zoom span {
+    border: 1px solid #fff;
+    color: #fff;
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+
+/* business */
+#section .business {
+    padding: 70px 0 80px 0;
+}
+
+#section .think {
+    width: 60%;
+    padding: 10px 20px;
+}
+
+#section .business h1 {
+    font-size: 42px;
+    font-weight: normal;
+    color: #333;
+    padding: 50px 0 10px 0;
+    text-align: left;
+}
+
+#section .business img {
+    float: right;
+    width: 460px;
+    height: 368px;
+}
+
+#section .business h3 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #555;
+    padding: 0 0 10px 0;
+}
+
+#section .business p {
+    font-size: 16px;
+    color: #777;
+}
+
+#section .business a {
+    display: inline-block;
+    font-size: 13px;
+    margin: 20px 0 0 0;
+    padding: 5px 30px 6px 30px;
+    border-radius: 0px;
+    border: 1px solid #666;
+    color: #fff;
+    background: #666;
+    transition: all 0.3s;
+}
+#section .business a:hover {
+    background-color: #cc1b38;
+}
+
+#section .paral {
+    background-image: url(../images/m-an01.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 100px 30px;
+    color: #fff;
+    text-align: center;
+}
+#section .paral h2 {
+    font-size: 34px;
+    font-weight: normal;
+    color: #fff;
+    margin: 0 0 15px 0;
+}
+#section .paral p {
+    font-size: 17px;
+    font-weight: normal;
+    color: #fff;
+    margin: 0 0 25px;
+}
+#section .paral a {
+    display: inline-block;
+    font-size: 12px;
+    padding: 6px 30px 6px 30px;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all 0.3s;
+}
+#section .paral a:hover {
+    background-color: #cc1b38;
+}
+
+
+/* center */
+#section .center {
+    padding: 70px 0 80px 0;
+    text-align: center;
+}
+
+#section .center h2 {
+    font-size: 34px;
+    font-weight: bold;
+    color: #333;
+}
+
+#section .center p.desc {
+    font-size: 17px;
+    font-weight: normal;
+    color: #777;
+    padding: 5px 0 40px 0;
+}
+
+#section .center li {
+    float: left;
+    width: 30%;
+    margin: 0 1.665% ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#section .center li img {
+    width: 100%;
+}
+
+#section .center > div {
+    max-width: 900px;
+    margin: 0 auto;
+} 
+
+#section .center li::before {
+    content: '';
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    transition: all 0.5s;
+}
+#section .center li:hover::before {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#section .center li .zoom {
+    position: absolute;
+    top: 50%; left: 35%;
+    margin-top: -30px;
+    text-align: center;
+}
+
+#section .center li h3 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #fff;
+    margin: 0 0 25px 0;
+    letter-spacing: .5px;
+    opacity: 1;
+}
+
+#section .center li .zoom span {
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px 30px 6px 30px;
+    transition: all 0.2s;
+    opacity: 0;
+}
+#section .center li:hover .zoom span {
+    border: 1px solid #fff;
+    color: #fff;
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+#section .center li .zoom {
+    opacity: 1;
+}
+#section .center li:hover .zoom {
+    opacity: 1;
+}
