@@ -5,6 +5,7 @@ ul { list-style: none;}
 table {border-collapse: collapse; 
     width: 100%; table-layout: fixed;
 }
+caption {display: none;}
 .cf::after { content: ''; display: block; clear: both;}
 figure, header, section, footer, nav, article, aside, main {
     display: block;
